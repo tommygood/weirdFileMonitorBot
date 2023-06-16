@@ -2,9 +2,11 @@
 import datetime, requests
 from subprocess import call, PIPE, run
 
+# bot info
+bot_token = ""
+chat_id = ""
+
 def main() :
-    bot_token = "6261510862:AAEHbnjlKupEgKMSn6umI2ARTLNxwUSxnCo"
-    chat_id = "1697361994"
     content = filterWhiteList(lsContainerContent())
     if not content == "good" :
         send_msg_url = f"https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={content}"
