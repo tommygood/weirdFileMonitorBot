@@ -6,5 +6,5 @@ monitor whether have a suspecious file in the specify directory with crontab and
 - `crontab -e` : execute the script per hour
 
   ```
-  */60 * * * * python3 /path/to/monitorFile.py
+  */60 * * * * python3 /path/to/monitorImWordpress.py
   ```
