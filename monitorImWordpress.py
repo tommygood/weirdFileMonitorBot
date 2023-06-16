@@ -14,8 +14,7 @@ def main() :
         print(res)
 
 def lsContainerContent() :
-    # sudo docker exec wordpress_im_sa ls /var/www/html
-    container_name = "wordpress_im"
+    container_name = "wordpress_xxx"
     file_path = "/var/www/html"
     result = run(["docker", "exec", container_name, "ls", file_path], stdout=PIPE, stderr=PIPE, universal_newlines=True)
     return result.stdout
